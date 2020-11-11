@@ -1,0 +1,68 @@
+.home {
+  height: 100%;
+  .el-container,
+  .el-aside,
+  .el-main {
+    height: 100%;
+  }
+  .el-aside {
+    width: 12% !important;
+    color: #CCCCC5;
+    background: #293C55;
+  }
+  .el-main {
+    background: #F3F3F3;
+    .title {
+      display: flex;
+      align-items: flex-end;
+      font-size: 30px;
+      color: #666;
+      div:last-child {
+        margin-left: 10px;
+        font-size: 20px;
+        color: #999;
+      }
+    }
+  }
+
+  /* 导航栏样式 */
+  .nameList {
+    li {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      cursor: pointer;
+      & > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        border-radius: 100%;
+      }
+      &.active {
+        background: #E43C59;
+        color: #fff;
+      }
+      &:hover {
+        background: #162436;
+      }
+    }
+  }
+
+  /* 图表布局样式 */
+  .main {
+    height: calc(100% - 40px);
+    & > div{
+      display: flex;
+      height: 100%;
+      & > div {
+        flex: auto;
+      }
+    }
+  }
+}
