@@ -1,0 +1,42 @@
+{
+  "components": {
+    "title": "标题组件",
+    "legend": "图例组件",
+    "grid": "直角坐标系内绘图网格,可理解为设置整个图表的位置组件",
+    "xAxis": " x 轴",
+    "yAxis": " y 轴",
+    "tooltip": "提示框组件"
+  },
+  "property": {
+    "title": {
+      "show": {
+        "explain": "是否显示标题组件",
+        "type": "boolean"
+      },
+      "text": {
+        "explain": "主标题文本，支持使用 \\n 换行",
+        "type": "string"
+      },
+      "textStyle": {
+        "explain": "文字的样式",
+        "type": "string"
+      },
+      "left": {
+        "explain": "组件离容器左侧的距离",
+        "type": "string / number"
+      },
+      "top": {
+        "explain": "组件离容器上侧的距离",
+        "type": "string / number"
+      },
+      "right": {
+        "explain": "组件离容器右侧的距离",
+        "type": "string / number"
+      },
+      "bottom": {
+        "explain": "组件离容器下侧的距离",
+        "type": "string / number"
+      }
+    }
+  }
+}

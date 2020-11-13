@@ -1,6 +1,6 @@
 <template>
   <div class="myecharts">
-    <div :id="idName">1111</div>
+    <div :id="idName"></div>
   </div>
 </template>
 
@@ -16,7 +16,6 @@ export default {
   methods: {
     init() {
       const optionKeys = Object.keys(this.optionData)
-      console.log(optionKeys)
       const myChart = this.$echarts.init(document.getElementById(this.idName));
       myChart.setOption(this.options);
     }

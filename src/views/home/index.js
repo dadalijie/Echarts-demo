@@ -25,8 +25,12 @@ export default {
       ]
     }
   },
+  created() {
+    this.currentIndex = Number(sessionStorage.currentIndex) || 0
+  },
   methods: {
     changeEcharts(path, index) {
+      sessionStorage.currentIndex = index
       this.currentIndex = index
       this.$router.push(path)
     }
